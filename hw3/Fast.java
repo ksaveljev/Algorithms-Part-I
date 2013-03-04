@@ -69,7 +69,6 @@ public class Fast {
             }
 
             if (n - position > 2) {
-              System.out.println("HI");
                 printLine(pointsBySlope, position, n);
             }
         }
