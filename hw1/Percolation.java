@@ -4,6 +4,9 @@ public class Percolation {
     private int N, top, bottom;
 
     public Percolation(int N) {
+        if (N <= 0)
+            throw new java.lang.IllegalArgumentException();
+
         uf1 = new WeightedQuickUnionUF(N*N+2);
         uf2 = new WeightedQuickUnionUF(N*N+1);
         bfield = new byte[N*N/8+1];
